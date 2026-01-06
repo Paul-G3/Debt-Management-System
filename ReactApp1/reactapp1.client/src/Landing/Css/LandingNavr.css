@@ -1,0 +1,48 @@
+.landing-header {
+    color: #0f172a;
+    display:flex;
+    justify-content:space-between;
+    padding:1rem 2rem;
+    position:sticky;
+    top:0;
+    left:0;
+    right:0;
+    margin-bottom:2rem;
+    background-color:aliceblue;
+}
+
+.landing-ham-burger
+{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.header-right-nav {
+    display: none;
+}
+
+.sytem-name {
+    color: #0f172a;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    font-style:italic;
+}
+
+@media (min-width: 768px) {
+
+    .landing-ham-burger
+    {
+        display:none;
+    }
+
+    .header-right-nav {
+        display: flex;
+        gap: 7rem;
+        list-style: none;
+        font-size: 1.4rem;
+    }
+
+    .landing-header {
+        padding: 1rem 5rem;
+    }
+}
