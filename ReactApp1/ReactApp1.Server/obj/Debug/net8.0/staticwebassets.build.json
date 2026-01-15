@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "v0kNv1xA5EVCenZz0IGAzmDAmIqqyNaW3qZLVAOTPxk=",
+  "Hash": "BzULp5Qx0Ms4AcnfE4Nrid4rd5tMcbM3nKXQiQatfog=",
   "Source": "ReactApp1.Server",
   "BasePath": "_content/ReactApp1.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\goodm\\Source\\Repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\reactapp1.client.esproj",
+      "Identity": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\reactapp1.client.esproj",
       "Version": 2,
       "Source": "reactapp1.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",

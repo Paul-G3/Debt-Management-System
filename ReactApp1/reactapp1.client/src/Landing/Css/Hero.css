@@ -23,20 +23,22 @@
 }
 
 .landing-image {
-    width: 90%;
-    height: 50%;
-    background-color: #008080;
-    color: white;
+    width: 330px;
+    max-width: 600px;
+    height: 400px;  
+    margin: 0 auto;
     border-radius: 10px;
-    align-self: center;
+    overflow: hidden;
 }
 
-.landing-image img 
-{
-    width:100%;
-    height:100%;
-    border-radius:15px;
+.landing-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
 }
+
+
 
 
 .hero-features
@@ -86,7 +88,7 @@
     background-color: #0f172a;
 }
 
-.second-block h2
+.second-block h1
 {
     color:white;
     text-align:center;
@@ -109,15 +111,18 @@
 }
 
 .login-form {
-    border: 1px dotted black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius:10px;
     width: fit-content;
-    padding: 15px;
-    margin: 2rem auto;
+    padding: 15px 20px;
+    margin: 4rem auto;
+    background-color: white;
 }
 
 .login-form div
 {
     margin-bottom:1rem;
+    position:relative;
 }
 
 .login-form h1
@@ -129,16 +134,39 @@
 .login-form input
 {
     width:300px;
-    padding:5px 10px;
+    padding:5px 25px;
     font-size:1rem;
     outline:none;
     border-radius:8px;
 }
 
-.login-button-container
+.click-to-register
 {
-    display:grid;
-    place-content:center;
+    color:blue;
+    cursor:pointer;
+    transition:0.3s ease-in;
+}
+
+.click-to-register:hover
+{
+    color:orangered;
+}
+
+.login-user-icon {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+}
+
+.login-lock {
+    position: absolute;
+    top: 8px;
+    left: 5px
+}
+
+.login-button-container {
+    display: grid;
+    place-content: center;
 }
 
 .Login-btn {
@@ -167,6 +195,92 @@
     outline:none;
     border:1px solid gray;
     border-radius:10px;
+}
+
+
+/*#008080*/
+.why-us-container
+{
+    color:#008080;
+    text-align:center;
+}
+
+.inner-container-why-us
+{
+    display:grid;
+    grid-template-columns:repeat(1, 1fr);
+    gap:15px;
+    padding:1rem 2rem;
+}
+
+.inner-container-why-us div 
+{
+   min-height:280px;
+   background-color:white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   border-radius:10px;
+   padding:2rem;
+}
+
+.why-right
+{
+    text-align:left;
+}
+
+.right-one{
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-bottom:1rem;
+}
+.right-two {
+    color: #0f172a;
+    font-size:2rem;
+    font-weight:400;
+}
+
+/*footer code*/
+
+.landing-footer {
+    padding: 50px 10px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 2rem 0 0.5rem 0;
+}
+
+.landing-footer h2 
+{
+    color:#008080;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.follow-us-container a, .footer-contact a, .footer-about {
+    display: block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.follow-us-container a span , .footer-contact a span
+{
+    color:black;
+    margin-left:10px;
+}
+
+.footer-about  a
+{
+    display:block;
+    text-decoration:none;
+}
+
+@media (min-width: 400px) {
+    .landing-image {
+        width: 350px;
+        height: 500px;
+    }
 }
 
 
@@ -202,12 +316,38 @@
     {
         width:320px;
     }
+
+    .inner-container-why-us {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem 11rem;
+        gap:40px;
+    }
+
+    .landing-footer {
+        grid-template-columns: repeat(2,1fr);
+        padding:30px 11rem;
+    }
+
+    .landing-footer h2 
+    {
+      text-align:left;
+    }
 }
 
-@media (min-width: 1000px) 
-{
+@media (min-width: 1000px) {
     .services-container {
         grid-template-columns: repeat(4,1fr);
         gap: 1.5rem;
+    }
+
+    .landing-image {
+        width: 500px;
+        height:500px;
+    }
+
+    .landing-footer {
+        grid-template-columns: repeat(3,1fr);
+        padding: 30px 4rem;
+        gap: 2rem;
     }
 }

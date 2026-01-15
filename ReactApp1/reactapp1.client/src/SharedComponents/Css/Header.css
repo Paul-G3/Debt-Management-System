@@ -1,0 +1,77 @@
+
+
+.sub-systems-header {
+    background-color: #0f172a;
+    height: fit-content;
+    padding:10px;
+    position:sticky;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content:space-between;
+}
+
+.options-subsystem-container i 
+{
+    color:white;
+    font-size:1.4rem;
+}
+
+
+.right-header {
+    display: flex;
+    text-align: right;
+    align-items:center;
+}
+
+.user-logo-header {
+    display: none;
+    width:50px;
+    height:50px;
+    background-color:white;
+    border-radius:50%;
+}
+
+.user-image-container
+{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background-color:white;
+    align-self:center;
+    cursor:pointer;
+    margin-right:8px;
+}
+
+.user-image-container:hover {
+    opacity:0.5;
+}
+
+
+
+.user-name
+{
+    color:white;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    .user-image-container {
+        height: 35px;
+        width: 35px;
+    }
+
+    .user-logo-header
+    {
+        display:block;
+    }
+
+    .options-subsystem-container
+    {
+        display:none;
+    }
+}
