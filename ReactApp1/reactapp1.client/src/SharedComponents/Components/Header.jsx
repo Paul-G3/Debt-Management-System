@@ -13,6 +13,13 @@ function Header() {
           </div>
 
           <div className="right-header">
+              <div className="notification-container">
+                  <i className="fa-solid fa-bell"></i>
+                  <div className="red-notication-div">
+                    <span>1</span>
+                  </div>
+
+              </div>
               <div className="user-image-container"></div>
              <p className="user-name">Mr Goodman</p>
           </div>

@@ -33,10 +33,65 @@ function Hero() {
 
               <div className="services-container">
 
-                   <div className="service-block"></div>
-                   <div className="service-block"></div>
-                   <div className="service-block"></div>
-                   <div className="service-block"></div>
+                  <div className="service-block">
+                      <div className="service-icon">
+                          <i className="fa-solid fa-users" ></i>
+                      </div>
+                      <h2>Debtor Management</h2>
+                      <p>Manage debtor profiles, balances, and payment history
+                          from one secure and centralized system.
+                      </p>
+
+                      <div className="learn-more-container">
+                          <span>Learn more</span>
+                          <i className="fas fa-arrow-right"></i>
+                      </div>
+                  </div>
+
+                  <div className="service-block">
+                      <div className="service-icon">
+                          <i className="fas fa-sync-alt"></i>
+                      </div>
+                      <h2>Debt Recovery & Follow-Ups</h2>
+                      <p>Automate reminders and follow-ups to improve recovery
+                          rates and reduce overdue accounts.
+                      </p>
+
+                      <div className="learn-more-container">
+                          <span>Learn more</span>
+                          <i className="fas fa-arrow-right"></i>
+                      </div>
+                  </div>
+
+                  <div className="service-block">
+                      <div className="service-icon">
+                          <i className="fas fa-chart-bar"></i>
+                      </div>
+                      <h2>Reporting & Compliance</h2>                      
+                      <p>Generate accurate financial reports and maintain
+                          compliance-ready records for audits and reviews.
+                      </p>
+
+                      <div className="learn-more-container">
+                          <span>Learn more</span>
+                          <i className="fas fa-arrow-right"></i>
+                      </div>
+                  </div>
+
+                  <div className="service-block">
+                      <div className="service-icon">
+                          <i className="fas fa-chart-line"></i>
+                      </div>
+                      <h2>Debt Balance Tracking</h2>
+                      <p>Monitor outstanding balances in real time and track
+                          reductions as payments are made over time.
+                      </p>
+
+                      <div className="learn-more-container">
+                          <span>Learn more</span>
+                          <i className="fas fa-arrow-right"></i>
+                      </div>
+                  </div>
                    
               </div>
 
@@ -53,7 +108,7 @@ function Hero() {
               </div>
 
               <div>
-                  <input type="password" placeholder="Passoword"></input>
+                  <input type="password" placeholder="Password"></input>
                   <i className="fa-solid fa-lock login-lock"></i>
                   <span></span>
               </div>

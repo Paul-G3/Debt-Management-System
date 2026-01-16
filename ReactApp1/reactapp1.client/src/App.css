@@ -1,1 +1,26 @@
-﻿
+﻿.sidenav {
+    height: 90vh;
+    width:200px;
+    background-color: #008080;
+    display:none;
+}
+
+.Layout {
+    display: grid;
+    grid-template-columns: 0.5fr 4.5fr;
+}
+
+.content
+{
+    background-color:black;
+}
+
+input, select {
+    border: 1px solid gray;
+}
+
+@media (min-width: 768px) {
+    .sidenav {
+        display:block;
+    }
+}
