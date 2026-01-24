@@ -1,0 +1,41 @@
+.layout-footer {
+    padding:10px;
+    background-color: #008080;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.notification-item
+{
+    display:flex;
+    flex-direction:column;
+    cursor:pointer;
+    transition:0.3s ease-in;
+}
+
+.notification-item:hover {
+   color:black;
+}
+
+.notification-item i 
+{
+    align-self:center;
+    font-size:1.4rem;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .layout-footer {
+        display:none;
+    }
+}

@@ -1,6 +1,6 @@
 function DashBoardCustomer() {
   return (
-    <p></p>
+    <p>DashBoard</p>
   );
 }
 

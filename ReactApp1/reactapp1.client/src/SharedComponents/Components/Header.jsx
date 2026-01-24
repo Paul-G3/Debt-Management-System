@@ -6,18 +6,23 @@ function Header() {
 
           <div className="options-subsystem-container">
               <i className="fa-solid fa-bars"></i>
+              <p>DashBoard</p>
           </div>
 
-          <div className="user-logo-header">
-             
+
+          <div className="user-logo-header-container">
+              <div className="user-logo-header">
+
+              </div>
+              <p>DashBoard</p>
+
           </div>
+      
 
           <div className="right-header">
               <div className="notification-container">
                   <i className="fa-solid fa-bell"></i>
-                  <div className="red-notication-div">
-                    <span>1</span>
-                  </div>
+                    <span className="number-of-messages">10</span>
 
               </div>
               <div className="user-image-container"></div>

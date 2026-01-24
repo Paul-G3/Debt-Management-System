@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\landing\\css\\hero.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\landing\\css\\hero.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\subsystemslayout\\customerlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\subsystemslayout\\customerlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\subsystemslayout\\ownerlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\subsystemslayout\\ownerlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\landing\\components\\hero.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\landing\\components\\hero.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,41 +43,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.css",
-              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\App.css",
-              "RelativeDocumentMoniker": "reactapp1.client\\src\\App.css",
-              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\App.css",
-              "RelativeToolTip": "reactapp1.client\\src\\App.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Title": "Hero.css",
+              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Landing\\Css\\Hero.css",
+              "RelativeDocumentMoniker": "reactapp1.client\\src\\Landing\\Css\\Hero.css",
+              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Landing\\Css\\Hero.css",
+              "RelativeToolTip": "reactapp1.client\\src\\Landing\\Css\\Hero.css",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAuwNMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-01-16T10:44:00.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OwnerLayout.jsx",
-              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\SubSystemsLayout\\OwnerLayout.jsx",
-              "RelativeDocumentMoniker": "reactapp1.client\\src\\SubSystemsLayout\\OwnerLayout.jsx",
-              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\SubSystemsLayout\\OwnerLayout.jsx",
-              "RelativeToolTip": "reactapp1.client\\src\\SubSystemsLayout\\OwnerLayout.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-01-16T10:43:46.574Z",
+              "WhenOpened": "2026-01-18T12:57:13.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CustomerLayout.jsx",
-              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\SubSystemsLayout\\CustomerLayout.jsx",
-              "RelativeDocumentMoniker": "reactapp1.client\\src\\SubSystemsLayout\\CustomerLayout.jsx",
-              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\SubSystemsLayout\\CustomerLayout.jsx",
-              "RelativeToolTip": "reactapp1.client\\src\\SubSystemsLayout\\CustomerLayout.jsx",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Title": "Hero.jsx",
+              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Landing\\Components\\Hero.jsx",
+              "RelativeDocumentMoniker": "reactapp1.client\\src\\Landing\\Components\\Hero.jsx",
+              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Landing\\Components\\Hero.jsx",
+              "RelativeToolTip": "reactapp1.client\\src\\Landing\\Components\\Hero.jsx",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAwIMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-01-16T10:43:44.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-18T12:51:07.326Z"
             }
           ]
         },

@@ -103,7 +103,6 @@ function Hero() {
               <div>
                   <input type="text" placeholder="User name"></input>
                   <i className="fa-solid fa-envelope login-user-icon"></i>
-
                    <span></span>
               </div>
 
@@ -114,8 +113,8 @@ function Hero() {
               </div>
 
               <div>
-                  <p>Forgot Password?</p>
-                  <p onClick={() => setCreateAccountModal(true)}>Dont have an Account ? <span className="click-to-register">Click here  to register </span></p>
+                  <p className="forgot-password">Forgot Password?</p>
+                  <p onClick={() => setCreateAccountModal(true)}>Don't have an Account ? <span className="click-to-register">Click here  to register </span></p>
               </div>
 
               <div className="login-button-container">
@@ -124,13 +123,13 @@ function Hero() {
           </form>
 
           <div className="why-us-container">
-              <h2>Why Business Prefer Us</h2>
+              <h1>Why Business Prefer Us</h1>
               <div className="inner-container-why-us">
                    <div className="why-right">
                       <p className="right-one">2K+</p>
                       <p className="right-two">Business are already using Khokha</p>
                   </div>
-                <div></div>
+                <div className="why-left"></div>
               </div>
           </div>
 
@@ -200,10 +199,14 @@ function Hero() {
                   <div className="create-account">
                       <div>
                           <input type="text" placeholder="Name"></input>
+                          <span>*</span>
+                          <p></p>
                       </div>
 
                       <div>
                           <input type="text" placeholder="Surname"></input>
+                          <span>*</span>
+                          <p></p>
                       </div>
 
                       <div>
@@ -213,26 +216,38 @@ function Hero() {
                               <option>Female</option>
 
                           </select>
+                          <span>*</span>
+                          <p></p>
                       </div>
 
                       <div>
                           <input type="text" placeholder="ID number"></input>
+                          <span>*</span>
+                          <p></p>
                       </div>
 
                       <div>
                           <input type="text" placeholder="Email"></input>
+                          <span>*</span>
+                          <p></p>
                       </div>
 
                       <div>
                           <input type="text" placeholder="Cellphone Number"></input>
+                          <span>*</span>
+                          <p></p>
                       </div>
 
                       <div>
                           <input type="text" placeholder="Store Name"></input>
+                          <span>*</span>
+                          <p></p>
                       </div>
 
                       <div>
                           <input type="text" placeholder="Store telphone number"></input>
+                          <span>*</span>
+                          <p></p>
                       </div>
 
                   </div>
