@@ -11,7 +11,7 @@
         "projectName": "ReactApp1.Server",
         "projectPath": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\ReactApp1.Server.csproj",
         "packagesPath": "C:\\Users\\goodm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\goodm\\Source\\Repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\obj\\",
+        "outputPath": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,9 +51,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
             "Microsoft.AspNetCore.SpaProxy": {
               "target": "Package",
               "version": "[8.*-*, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

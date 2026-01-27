@@ -5,16 +5,10 @@
     display:none;
 }
 
-.Layout {
-    display: grid;
-    grid-template-columns: 0.5fr 4.5fr;
-}
-
-.content
-{
-    background-color:black;
-}
-
+ main
+ {
+     overflow-y:auto;
+ }
 input, select {
     border: 1px solid gray;
 }
@@ -22,5 +16,10 @@ input, select {
 @media (min-width: 768px) {
     .sidenav {
         display:block;
+    }
+
+    .Layout {
+        display: grid;
+        grid-template-columns: 0.5fr 4.5fr;
     }
 }

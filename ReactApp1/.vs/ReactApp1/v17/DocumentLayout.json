@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\sharedcomponents\\css\\header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\sharedcomponents\\css\\header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.server\\repositories\\authenticaterepository\\authenticaterepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|solutionrelative:reactapp1.server\\repositories\\authenticaterepository\\authenticaterepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\sharedcomponents\\components\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\sharedcomponents\\components\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.server\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|solutionrelative:reactapp1.server\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\landing\\css\\hero.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\landing\\css\\hero.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.server\\passwords\\passwordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|solutionrelative:reactapp1.server\\passwords\\passwordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\landing\\components\\hero.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\landing\\components\\hero.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,40 +51,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Header.css",
-              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\SharedComponents\\Css\\Header.css",
-              "RelativeDocumentMoniker": "reactapp1.client\\src\\SharedComponents\\Css\\Header.css",
-              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\SharedComponents\\Css\\Header.css",
-              "RelativeToolTip": "reactapp1.client\\src\\SharedComponents\\Css\\Header.css",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAG8AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-01-23T16:51:58.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Header.jsx",
-              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\SharedComponents\\Components\\Header.jsx",
-              "RelativeDocumentMoniker": "reactapp1.client\\src\\SharedComponents\\Components\\Header.jsx",
-              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\SharedComponents\\Components\\Header.jsx",
-              "RelativeToolTip": "reactapp1.client\\src\\SharedComponents\\Components\\Header.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-01-23T16:51:39.459Z",
+              "Title": "AuthenticateRepo.cs",
+              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Repositories\\AuthenticateRepository\\AuthenticateRepo.cs",
+              "RelativeDocumentMoniker": "ReactApp1.Server\\Repositories\\AuthenticateRepository\\AuthenticateRepo.cs",
+              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Repositories\\AuthenticateRepository\\AuthenticateRepo.cs",
+              "RelativeToolTip": "ReactApp1.Server\\Repositories\\AuthenticateRepository\\AuthenticateRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T17:33:23.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Hero.css",
-              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Landing\\Css\\Hero.css",
-              "RelativeDocumentMoniker": "reactapp1.client\\src\\Landing\\Css\\Hero.css",
-              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Landing\\Css\\Hero.css",
-              "RelativeToolTip": "reactapp1.client\\src\\Landing\\Css\\Hero.css",
-              "ViewState": "AgIAAB8BAAAAAAAAAAAuwC0BAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-01-18T12:57:13.606Z",
+              "Title": "PasswordGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Passwords\\PasswordGenerator.cs",
+              "RelativeDocumentMoniker": "ReactApp1.Server\\Passwords\\PasswordGenerator.cs",
+              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Passwords\\PasswordGenerator.cs",
+              "RelativeToolTip": "ReactApp1.Server\\Passwords\\PasswordGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T17:27:31.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Hero.jsx",
+              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Landing\\Components\\Hero.jsx",
+              "RelativeDocumentMoniker": "reactapp1.client\\src\\Landing\\Components\\Hero.jsx",
+              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Landing\\Components\\Hero.jsx",
+              "RelativeToolTip": "reactapp1.client\\src\\Landing\\Components\\Hero.jsx",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-01-27T17:18:30.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticateController.cs",
+              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Controllers\\AuthenticateController.cs",
+              "RelativeDocumentMoniker": "ReactApp1.Server\\Controllers\\AuthenticateController.cs",
+              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Controllers\\AuthenticateController.cs",
+              "RelativeToolTip": "ReactApp1.Server\\Controllers\\AuthenticateController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T16:42:15.087Z",
               "EditorCaption": ""
             }
           ]

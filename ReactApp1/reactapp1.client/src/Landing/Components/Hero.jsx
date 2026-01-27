@@ -3,8 +3,47 @@ import LandingPic from '../../Images/Landing.WEBP'
 import LandingModal from './LandingModal';
 import React, { useState } from "react";
 function Hero() {
-
+    const basePath = import.meta.env.VITE_API_BASE_URL;
     const [CreateAccountModal, setCreateAccountModal] = useState(false);
+    const [email, SetUsername] = useState(null);
+    const [password, SetUPassword] = useState(null);
+
+    //create account variables
+    const [name, setName] = useState(null);
+    const [surname, setSurname] = useState(null);
+    const [title, setTitle] = useState(null);
+    const [idNumber, setIdNumber] = useState(null);
+    const [emailOwner, setEmail] = useState(null);
+    const [cellPhone, setCellPhone] = useState(null);
+    const [storeName, setStoreName] = useState(null);
+    const [telPhone, setTelPhone] = useState(null);
+
+
+    const Register = () => {        
+
+        const User = {
+            UserName: name,
+            Surname: surname,
+            Title: title,
+            Gender: null,                
+            Email: emailOwner,
+            Password: null,   
+            IDNumber: idNumber,
+            StoreName: storeName,
+            TelPhone :telPhone,
+            PhoneNumber: cellPhone,
+            Role: "ShopOwner",
+            Status: "Active"
+        };
+        
+        fetch(`${basePath}/Authenticate/register-owner`, {
+            method: "POST",
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify(User)
+        })
+    }
   return (
       <>        
 
@@ -98,16 +137,16 @@ function Hero() {
           </div>
 
 
-          <form className="login-form">
+          <div className="login-form">
               <h1>Login</h1>
               <div>
-                  <input type="text" placeholder="User name"></input>
+                  <input type="text" placeholder="User name" onChange={(e) => SetUsername(e.target.value)}></input>
                   <i className="fa-solid fa-envelope login-user-icon"></i>
                    <span></span>
               </div>
 
               <div>
-                  <input type="password" placeholder="Password"></input>
+                  <input type="password" placeholder="Password" onChange={(e)=> SetUPassword(e.target.value)}></input>
                   <i className="fa-solid fa-lock login-lock"></i>
                   <span></span>
               </div>
@@ -118,9 +157,9 @@ function Hero() {
               </div>
 
               <div className="login-button-container">
-                  <button type="submit" className="Login-btn">Login</button>
+                  <button className="Login-btn">Login</button>
               </div>
-          </form>
+          </div>
 
           <div className="why-us-container">
               <h1>Why Business Prefer Us</h1>
@@ -198,54 +237,65 @@ function Hero() {
 
                   <div className="create-account">
                       <div>
-                          <input type="text" placeholder="Name"></input>
+                          <i className="fa-solid fa-user"></i>
+                          <input type="text" placeholder="Name" onChange={(e) => setName(e.target.value) }></input>
                           <span>*</span>
                           <p></p>
                       </div>
 
                       <div>
-                          <input type="text" placeholder="Surname"></input>
+                          <i className="fa-solid fa-user"></i>
+                          <input type="text" placeholder="Surname" onChange={(e) => setSurname(e.target.value)}></input>
                           <span>*</span>
                           <p></p>
                       </div>
 
                       <div>
-                          <select>
-                              <option>Choose Gender</option>
-                              <option>Male</option>
-                              <option>Female</option>
-
+                          <i className="fa-solid fa-person-half-dress"></i>
+                          <select onChange={(e) => setTitle(e.target.value)}>
+                              <option value="" disabled >Select Title</option>
+                              <option value="Mr">Mr</option>
+                              <option value="Ms">Ms</option>
+                              <option value="Mrs">Mrs</option>
+                              <option value="Miss">Miss</option>
+                              <option value="Dr">Dr</option>
+                              <option value="Prof">Prof</option>
                           </select>
                           <span>*</span>
                           <p></p>
                       </div>
 
                       <div>
-                          <input type="text" placeholder="ID number"></input>
+                          <i className="fa-solid fa-id-card-clip"></i>
+                          <input type="text" placeholder="ID number" onChange={(e) => setIdNumber(e.target.value)}></input>
                           <span>*</span>
                           <p></p>
                       </div>
 
                       <div>
-                          <input type="text" placeholder="Email"></input>
+                          <i className="fa-solid fa-envelope"></i>
+                          <input type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)}></input>
                           <span>*</span>
                           <p></p>
                       </div>
 
                       <div>
-                          <input type="text" placeholder="Cellphone Number"></input>
+                          <i className="fa-solid fa-phone"></i>
+                          <input type="text" placeholder="Cellphone Number" onChange={(e) => setCellPhone(e.target.value)}></input>
                           <span>*</span>
                           <p></p>
                       </div>
 
                       <div>
-                          <input type="text" placeholder="Store Name"></input>
+                          <i className="fa-solid fa-shop"></i>
+                          <input type="text" placeholder="Store Name" onChange={(e) => setStoreName(e.target.value)}></input>
                           <span>*</span>
                           <p></p>
                       </div>
 
                       <div>
-                          <input type="text" placeholder="Store telphone number"></input>
+                          <i className="fa-solid fa-phone"></i>
+                          <input type="text" placeholder="Store telphone number" onChange={(e) => setTelPhone(e.target.value)}></input>
                           <span>*</span>
                           <p></p>
                       </div>
@@ -253,7 +303,7 @@ function Hero() {
                   </div>
 
                   <div>
-                      <button>Create</button>
+                      <button onClick={Register}>Create</button>
                   </div>
               </LandingModal>)
           }
