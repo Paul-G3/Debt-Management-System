@@ -1,7 +1,8 @@
 
 .owner-dashboard
 {
-    padding:10px;
+    margin-top:1.3rem;
+    padding:20px;
     display:grid;
     grid-template-columns:repeat(1,1fr);
     gap:18px;
@@ -19,7 +20,7 @@
 }
 
 .dashboard-card {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 15px;
 }
@@ -37,3 +38,21 @@
 {
     font-size:1.6rem;
 }
+
+@media (min-width: 768px) 
+{
+    .owner-dashboard {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .dashboard-card{
+        margin-bottom:1rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .owner-dashboard {
+        grid-template-columns: repeat(3,1fr);
+        gap: 25px;
+    }
+}
+

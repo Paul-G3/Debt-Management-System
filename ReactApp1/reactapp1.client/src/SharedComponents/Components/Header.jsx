@@ -1,6 +1,9 @@
 
 import '../Css/Header.css'
+import { useUser } from "../../Context/UserContext";
+
 function Header() {
+    const { user } = useUser();
   return (
       <header className="sub-systems-header">
 

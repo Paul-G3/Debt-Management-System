@@ -4,7 +4,7 @@ function LandingNavBar() {
       <header className="landing-header">
           <p className="sytem-name">
               <i className="fa-solid fa-feather"></i>
-              Khokha
+              PayMe
           </p>
           <ul className="header-right-nav">              
               <li>Services</li>

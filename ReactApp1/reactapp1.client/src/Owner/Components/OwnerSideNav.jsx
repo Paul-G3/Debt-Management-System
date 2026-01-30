@@ -5,9 +5,57 @@ function OwnerSideNav() { //side nav here with routes
 
         //this is where the routing is mapping or id say defined for when a specific element is clicked it 
         //has something similar to you href here
-      <aside className="sidenav">
-          <NavLink to="/Owner">Owner</NavLink>
-          <NavLink to="/Customer/manage-pharmacy">Products</NavLink>
+        <aside className="sidenav">
+            <NavLink
+                to="/Owner"
+                className={({ isActive }) =>
+                    isActive ? "nav-item active" : "nav-item"
+                }
+            >
+                <i className="fa-solid fa-house"></i>
+                <span>Home</span>
+            </NavLink>
+
+            <NavLink
+                to="/Owner/manage-pharmacy"
+                className={({ isActive }) =>
+                    isActive ? "nav-item active" : "nav-item"
+                }
+            >
+                <i className="fa-solid fa-wine-bottle"></i>
+                <span>Products</span>
+            </NavLink>
+
+            <NavLink
+                to="/Owner/customers"
+                className={({ isActive }) =>
+                    isActive ? "nav-item active" : "nav-item"
+                }
+            >
+                <i className="fa-solid fa-users"></i>
+                <span>Customer</span>
+            </NavLink>
+
+            <NavLink
+                to="/Owner/settings"
+                className={({ isActive }) =>
+                    isActive ? "nav-item active" : "nav-item"
+                }
+            >
+                <i className="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </NavLink>
+
+            <NavLink
+                to="/logout"
+                className={({ isActive }) =>
+                    isActive ? "nav-item active" : "nav-item"
+                }
+            >
+                <i className="fa-solid fa-arrow-right-from-bracket logout"></i>
+                <span>LogOut</span>
+            </NavLink>
+
       </aside>
   );
 }

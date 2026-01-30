@@ -1,9 +1,53 @@
 ﻿.sidenav {
     height: 90vh;
-    width:200px;
+    width: 41px;
     background-color: #008080;
-    display:none;
+    display: none;
+    transition: 0.5s ease-in-out;
+    overflow-y: hidden;
+    cursor: pointer;
+    padding: 1.5rem 5px;
 }
+
+.nav-item {
+    display: flex;
+    align-items:center;
+    margin-bottom: 17px;
+    color: white;
+    text-decoration: none;
+    font-size:1.3rem;
+    padding: 5px 0;
+}
+
+.nav-item i 
+{
+     width: 25px;
+     font-size:1.5rem;
+}
+
+.nav-item span 
+{
+    margin-left:12px;
+}
+.logout {
+    transform: rotate(180deg);
+}
+
+.sidenav:hover {
+    width: 200px;
+}
+
+
+.sidenav::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-item.active {
+   background-color:lightgray;
+    border-radius: 3px;
+}
+
+
 
  main
  {
@@ -11,6 +55,11 @@
  }
 input, select {
     border: 1px solid gray;
+}
+
+
+.Layout {
+    margin-bottom: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -21,5 +70,6 @@ input, select {
     .Layout {
         display: grid;
         grid-template-columns: 0.5fr 4.5fr;
+        margin-bottom: 0rem;
     }
 }

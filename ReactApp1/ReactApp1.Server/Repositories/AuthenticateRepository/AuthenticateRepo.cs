@@ -27,5 +27,18 @@ namespace ReactApp1.Server.Repositories.AuthenticateRepository
             }
         }
 
+        public async Task<dynamic> Login(User user)
+        {
+            try
+            {
+                return await dataAccess.GetData<dynamic, dynamic>("Sp_Login", new { user.Password, user.UserName });
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+        }
+        
+
     }
 }

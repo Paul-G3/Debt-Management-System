@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using ReactApp1.Server.Models;
 using ReactApp1.Server.Passwords;
 using ReactApp1.Server.Repositories.AuthenticateRepository;
+using System.Data;
 
 namespace ReactApp1.Server.Controllers
 {
@@ -30,7 +31,8 @@ namespace ReactApp1.Server.Controllers
         [HttpPost("login-user")]
         public async Task<IActionResult> Login([FromBody] User Login)
         {
-            return Ok();
+            var data = await autenticate.Login(Login);
+            return Ok(new { Role = data.Role, Title = data.Title, UserName = data.Username  });
         }
     }
 }

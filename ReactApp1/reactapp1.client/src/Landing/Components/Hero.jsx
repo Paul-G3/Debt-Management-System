@@ -2,11 +2,16 @@
 import LandingPic from '../../Images/Landing.WEBP'
 import LandingModal from './LandingModal';
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useUser } from "../../Context/UserContext";
 function Hero() {
     const basePath = import.meta.env.VITE_API_BASE_URL;
     const [CreateAccountModal, setCreateAccountModal] = useState(false);
     const [email, SetUsername] = useState(null);
     const [password, SetUPassword] = useState(null);
+    const navigate = useNavigate();
+    const { loginUser } = useUser();
+
 
     //create account variables
     const [name, setName] = useState(null);
@@ -19,7 +24,8 @@ function Hero() {
     const [telPhone, setTelPhone] = useState(null);
 
 
-    const Register = () => {        
+    const Register = () =>
+    {        
 
         const User = {
             UserName: name,
@@ -43,6 +49,45 @@ function Hero() {
             },
             body: JSON.stringify(User)
         })
+    }
+
+    const Login = () => {
+        const User = {
+            UserName: email,
+            Password: password
+        }
+        fetch(`${basePath}/Authenticate/login-user`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(User)
+        })
+            .then(res => res.json())//concvert into json object
+            .then(data => {
+                console.log(data)
+                if (data) {
+                    loginUser({
+                        userName: data.UserName,
+                        Title: data.title
+                    });
+
+                }
+
+                if (data.role === "ShopOwner") {
+                    navigate("/Owner");
+                }
+                else if (data.role === "Customer") {
+                    navigate("/Customer");
+                }
+                else {
+                    alert("Incorrect email or password");
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                alert("Something went wrong");
+            });
     }
   return (
       <>        
@@ -157,7 +202,7 @@ function Hero() {
               </div>
 
               <div className="login-button-container">
-                  <button className="Login-btn">Login</button>
+                  <button className="Login-btn" onClick={Login}>Login</button>
               </div>
           </div>
 
