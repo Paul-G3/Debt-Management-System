@@ -58,6 +58,12 @@ input, select {
 }
 
 
+.logout-side-nav
+{
+    position:absolute;
+    bottom:0;
+}
+
 .Layout {
     margin-bottom: 4rem;
 }
@@ -69,7 +75,7 @@ input, select {
 
     .Layout {
         display: grid;
-        grid-template-columns: 0.5fr 4.5fr;
+        grid-template-columns: 0.3fr 4.7fr;
         margin-bottom: 0rem;
     }
 }

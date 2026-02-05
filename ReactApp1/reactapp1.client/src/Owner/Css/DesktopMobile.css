@@ -1,0 +1,143 @@
+
+/*desktop css*/
+.products-table {
+    text-align: left;
+    margin: 2rem auto;
+    width: 100%;
+    padding:10px;
+}
+
+.grid-header,
+.table-body {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 1fr 1.5fr 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.grid-header {
+    font-size: 1.4rem;
+    color: #008080;
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.grid-header:first-child
+{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+.grid-header:last-child
+{
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.product-image-container {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.product-name-image
+{
+    position:relative;
+}
+
+.product
+{
+    position:absolute;
+    top:5px;
+}
+
+
+/*mobile css*/
+
+.product-card {
+    padding: 0 10px;
+    position:relative;
+}
+
+.product-card hr 
+{
+    margin:1rem 0;
+}
+
+.product-details {
+    display: flex;
+    width:100%;
+    margin-bottom:10px;
+}
+
+.product-image-container-mobile
+{
+    min-width:85px;
+    min-height:8px;
+    background-color:black;
+    border-radius:50%;
+    margin-right:8px;
+}
+
+.product-name-mobile
+{
+    font-size:1.2rem;
+    color:grey;
+    font-weight:bold;
+}
+.category-mobile
+{
+    margin:5px 0;
+}
+
+.product-price-mobile {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    font-size: 1.3rem;
+    color: mediumblue;
+    font-weight: bolder;
+}
+
+/*statuses*/
+
+.low-stock,.in-stock{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    margin-right:5px;
+}
+
+.in-stock
+{
+    background-color:green;
+}
+
+.in_stock {
+    color: green;
+}
+
+
+.low_stock {
+    color: orange;
+}
+
+
+.low-stock{
+    background-color: orange;
+}
+
+
+@media (min-width: 1000px) {
+    .products-table {
+        text-align: left;
+        margin: 2rem auto;
+        width: 90%;
+    }
+}

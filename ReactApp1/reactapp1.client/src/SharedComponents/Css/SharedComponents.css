@@ -1,0 +1,46 @@
+.button {
+    background-color: #008080;
+    color:white;
+    border-radius:5px;
+    min-width:100%;
+    border:none;
+    padding:10px;
+    font-size:1.1rem;
+}
+
+.search-container
+{
+    width:100%;
+    position:relative;
+}
+
+.search-container input
+{
+    width:100%;
+    padding:10px  40px;
+    border-radius:5px;
+    outline:none;
+}
+
+.search-container i 
+{
+    position:absolute;
+    top:10px;
+    left:5px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .button {
+        min-width: 280px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .button {
+        min-width: 250px;
+    }
+}

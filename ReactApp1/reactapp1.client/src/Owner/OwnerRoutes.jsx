@@ -1,6 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import OwnerLayout from '../SubSystemsLayout/OwnerLayout'
 import DashBoard from '../Owner/Pages/DashBoard'
+import Customers from '../Owner/Pages/Customerrs'
+import Products from '../Owner/Pages/Products'
+
 function OwnerRoutes() {
     return (
 
@@ -9,9 +12,8 @@ function OwnerRoutes() {
       <Routes>
           <Route element={<OwnerLayout />}>
                 <Route index element={<DashBoard />} />
-
-              {/* /owner/manage-pharmacy */}
-              {/*<Route path="manage-pharmacy" element={<ManagePharmacy />} />*/}
+                <Route path="Customers" element={<Customers />} />
+                <Route path="Products" element={<Products />} />
 
           </Route>
       </Routes>

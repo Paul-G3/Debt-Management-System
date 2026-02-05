@@ -17,7 +17,7 @@ function OwnerSideNav() { //side nav here with routes
             </NavLink>
 
             <NavLink
-                to="/Owner/manage-pharmacy"
+                to="/Owner/Products"
                 className={({ isActive }) =>
                     isActive ? "nav-item active" : "nav-item"
                 }
@@ -27,7 +27,7 @@ function OwnerSideNav() { //side nav here with routes
             </NavLink>
 
             <NavLink
-                to="/Owner/customers"
+                to="/Owner/Customers"
                 className={({ isActive }) =>
                     isActive ? "nav-item active" : "nav-item"
                 }
@@ -49,7 +49,7 @@ function OwnerSideNav() { //side nav here with routes
             <NavLink
                 to="/logout"
                 className={({ isActive }) =>
-                    isActive ? "nav-item active" : "nav-item"
+                    isActive ? "nav-item active" : "nav-item logout-side-nav"
                 }
             >
                 <i className="fa-solid fa-arrow-right-from-bracket logout"></i>
