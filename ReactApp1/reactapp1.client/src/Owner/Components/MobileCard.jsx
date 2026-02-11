@@ -1,5 +1,6 @@
 import "../Css/DesktopMobile.css"
-function MobileCard({products }) {
+function MobileCard({ products }) {
+    const apiBase = import.meta.env.VITE_API_BASE_URL;
     return (
         <div>
         {
@@ -10,17 +11,17 @@ function MobileCard({products }) {
 
                     <div className="product-details">
                         <div className="product-image-container-mobile">
-                            <img></img>
+                            <img src={`https://localhost:7242${p.imageUrl}`} alt={p.name} />
                         </div>
 
                         <div className="">
                             <p className="product-price-mobile">R{p.price }</p>
                             <p className="product-name-mobile">{p.name}</p>
                             <p className="category-mobile">{p.category} </p>
-                            <p className="quantity-mobile">100 Qty</p>
+                            <p className="quantity-mobile">{p.quantity } Qty</p>
                             <p className="status-mobile">
-                                <span className={p.stock.toLowerCase().replace(" ","-")}></span>  
-                                <span className={p.stock.toLowerCase().replace(" ", "_")}>{p.stock}</span>
+                                <span className={p.status.toLowerCase().replace(/\s+/g, "-")}></span>  
+                                <span className={p.status.toLowerCase().replace(/\s+/g, "_")}>{p.status}</span>
                             </p>
                         </div>
                     </div>

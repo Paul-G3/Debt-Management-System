@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\OwnerRepository\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>

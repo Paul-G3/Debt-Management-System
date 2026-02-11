@@ -1,7 +1,7 @@
 import '../Css/SharedComponents.css';
-function Button({text }) {
+function Button({ text, handleClick }) {
   return (
-      <button className="button">{text}</button>
+      <button className="button" onClick={handleClick }>{text}</button>
   );
 }
 

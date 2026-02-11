@@ -1,6 +1,7 @@
 using ReactApp1.Server.DataAccess;
 using ReactApp1.Server.Passwords;
 using ReactApp1.Server.Repositories.AuthenticateRepository;
+using ReactApp1.Server.Repositories.OwnerRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddTransient<IAutenticateRepo, AuthenticateRepo>();
+builder.Services.AddTransient<IOwnerRepo, OwnerRepo>();
 builder.Services.AddScoped<PasswordGenerator>();
 
 //ADD CORS POLICY HERE

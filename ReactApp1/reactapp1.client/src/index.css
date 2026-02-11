@@ -9,3 +9,8 @@ body {
     color: #0f172a;
     scroll-behavior:smooth;
 }
+
+.required-asterick {
+    color: orangered;
+    margin-left: 5px;
+}

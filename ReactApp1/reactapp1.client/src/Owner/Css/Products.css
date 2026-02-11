@@ -37,6 +37,55 @@
 /*/modal*/
 
 
+.add-products-container input,select
+{
+    min-width:280px;
+    padding:8px 10px;
+    outline:none;
+    border-radius:5px;
+    font-size:1rem;
+    cursor:pointer;
+}
+
+.add-input-container
+{
+    margin-bottom:0.7rem;
+}
+
+.image-upload {
+    margin-bottom: 1rem;
+}
+
+.image-upload input[type="file"] {
+    display: none; /* hide default input */
+}
+
+.image-upload label {
+    width: 100%;
+    height: 70px;
+    border: 2px dashed #cfd8dc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #607d8b;
+    transition: 0.3s;
+}
+
+.image-upload label:hover {
+    border-color: #008080;
+    color: #008080;
+    background: #f5fafa;
+}
+
+.image-upload i {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+
 
 @media (min-width: 768px) {
     .products-header {
@@ -67,5 +116,9 @@
     .products-header {
         grid-template-columns: 1fr 2fr 0.7fr;
         padding: 10px 50px 0 10px;
+    }
+
+    .add-products-container input, select {
+        width: 320px;
     }
 }

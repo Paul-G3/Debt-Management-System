@@ -284,14 +284,14 @@ function Hero() {
                       <div>
                           <i className="fa-solid fa-user"></i>
                           <input type="text" placeholder="Name" onChange={(e) => setName(e.target.value) }></input>
-                          <span>*</span>
+                          <span className="required-asterick">*</span>
                           <p></p>
                       </div>
 
                       <div>
                           <i className="fa-solid fa-user"></i>
                           <input type="text" placeholder="Surname" onChange={(e) => setSurname(e.target.value)}></input>
-                          <span>*</span>
+                          <span className="required-asterick">*</span>
                           <p></p>
                       </div>
 
@@ -306,42 +306,42 @@ function Hero() {
                               <option value="Dr">Dr</option>
                               <option value="Prof">Prof</option>
                           </select>
-                          <span>*</span>
+                          <span className="required-asterick">*</span>
                           <p></p>
                       </div>
 
                       <div>
                           <i className="fa-solid fa-id-card-clip"></i>
                           <input type="text" placeholder="ID number" onChange={(e) => setIdNumber(e.target.value)}></input>
-                          <span>*</span>
+                          <span className="required-asterick">*</span>
                           <p></p>
                       </div>
 
                       <div>
                           <i className="fa-solid fa-envelope"></i>
                           <input type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)}></input>
-                          <span>*</span>
+                          <span className="required-asterick">*</span>
                           <p></p>
                       </div>
 
                       <div>
                           <i className="fa-solid fa-phone"></i>
                           <input type="text" placeholder="Cellphone Number" onChange={(e) => setCellPhone(e.target.value)}></input>
-                          <span>*</span>
+                          <span className="required-asterick">*</span>
                           <p></p>
                       </div>
 
                       <div>
                           <i className="fa-solid fa-shop"></i>
                           <input type="text" placeholder="Store Name" onChange={(e) => setStoreName(e.target.value)}></input>
-                          <span>*</span>
+                          <span className="required-asterick">*</span>
                           <p></p>
                       </div>
 
                       <div>
                           <i className="fa-solid fa-phone"></i>
                           <input type="text" placeholder="Store telphone number" onChange={(e) => setTelPhone(e.target.value)}></input>
-                          <span>*</span>
+                          <span className="required-asterick">*</span>
                           <p></p>
                       </div>
 

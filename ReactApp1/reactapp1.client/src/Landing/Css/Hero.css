@@ -268,11 +268,7 @@
     gap:10px;
 }
 
-.create-account span
-{
-    color:orangered;
-    margin-left:5px;
-}
+
 
 .create-account input, .create-account select 
 {

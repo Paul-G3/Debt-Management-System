@@ -17,7 +17,7 @@ function DesktopTable({ products }) {
                   <div className="table-body">
                       <span className="product-name-image">
                           <span className="product-image-container">
-                              {/*<img src={p.image } alt="product"></img>*/}
+                              <img src={`https://localhost:7242${p.imageUrl}`} alt={p.name} />
                           </span>
 
                           <span className="product">
@@ -27,7 +27,7 @@ function DesktopTable({ products }) {
 
                       <span>{p.category}</span>
                       <span>${p.price}</span>
-                      <span className={p.stock.toLowerCase().replace(" ", "_")}>{p.stock}</span>
+                      <span className={p.status.toLowerCase().replace(" ", "_")}>{p.status}</span>
                       <span>100</span>
                       <span>
                           <button>

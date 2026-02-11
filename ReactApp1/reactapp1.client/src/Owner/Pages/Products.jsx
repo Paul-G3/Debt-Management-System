@@ -4,8 +4,13 @@ import SearchInput from '../../SharedComponents/Components/SearchInput';
 import DesktopTable from '../Components/DesktopTable';
 import MobileCard from '../Components/MobileCard';
 import LandingModal from '../../Landing/Components/LandingModal';
+import React, { useState,useEffect } from "react";
 
 function Products() {
+    const basePath = import.meta.env.VITE_API_BASE_URL;
+    const [openModal, setOpenModal] = useState(false);
+    const openingModal = () => { setOpenModal(true) }
+    const [ProductsData, setProductsData] = useState([]);
     const dummyProducts = [
         {
             id: 1,
@@ -50,12 +55,61 @@ function Products() {
         }
     ];
 
+    //Modal state variables
+    const [ProductName, setProductName] = useState(null);
+    const [Category, setCategory] = useState(null);
+    const [Price, setPrice] = useState(null);
+    const [Quantity, setQuantity] = useState(null);
+    const [imageFile, setImageFile] = useState(null);
+    const [preview, setPreview] = useState(null);
+
+    const handleImageChange = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        setImageFile(file);
+        setPreview(URL.createObjectURL(file));
+    };
+    function AddProduct() {
+
+        const formData = new FormData();
+        formData.append("Name", ProductName);
+        formData.append("Category", Category);
+        formData.append("Price", Price);
+        formData.append("Quantity", Quantity);
+        formData.append("Image", imageFile);
+
+        fetch(`${basePath}/Owner/add-product`, {
+            method: "POST",
+            body: formData
+        })
+
+        GetAllProduct();
+    }
+
+    function GetAllProduct() {
+        fetch(`${basePath}/Owner/get-products`, {
+            method: "GET"
+        })
+            .then(res => res.json())
+            .then(data => {
+                setProductsData(data);
+                console.log(data);
+            });
+
+    }
+
+    useEffect(() => {
+        GetAllProduct();
+
+    }, []);
+
   return (
       <div>      
           <div className="products-header">
 
               <div>
-                  <Button text="New Products"/>
+                  <Button text="New Products" handleClick={openingModal} />
 
               </div>
 
@@ -72,48 +126,64 @@ function Products() {
               
           </div>
 
-          <MobileCard products={dummyProducts} />
-          <DesktopTable products={dummyProducts} />
+          <MobileCard products={ProductsData} />
+          <DesktopTable products={ProductsData} />
 
+          {
+              openModal && (<LandingModal title="Add Product">                
 
-          <LandingModal title="Add Product">             
+                  <div className="add-products-container">
 
-              <div>
-                  <input type="image"></input>
-              </div>
+                      <div className="add-input-container">
+                          <input type="text" placeholder="Product Name" onChange={(e) => setProductName(e.target.value) }></input>
+                          <span className="required-asterick">*</span>
+                      </div>
 
-              <div className="add-products-container">
+                      <div className="add-input-container">
+                          <select onChange={(e) => setCategory(e.target.value)}>
+                              <option>Category</option>
+                              <option value="Liquid">Liquid</option>
+                              <option value="Bread">Bread</option>
+                              fd<option value="Protein">Protein</option>
+                          </select>
+                          <span className="required-asterick">*</span>
+                      </div>
 
-                  <div>
-                      <input type="text" placeholder="Product Name"></input>
-                      <span></span>
+                      <div className="add-input-container">
+                          <input type="text" placeholder="Price" onChange={(e) => setPrice(e.target.value)}></input>
+                          <span className="required-asterick">*</span>
+                      </div>
+
+                      <div className="add-input-container">
+                          <input type="number" placeholder="Qunatity" onChange={(e) => setQuantity(e.target.value)}></input>
+                          <span className="required-asterick">*</span>
+                      </div>
                   </div>
 
-                  <div>
-                      <select>
-                        <option>Category</option>
-                        <option>Liquid</option>
-                        <option>Bread</option>
-                        fd<option>Protein</option>
-                      </select>
-                      <span></span>
+                  <div className="image-upload">
+                      <input
+                          type="file"
+                          id="product-image"
+                          accept="image/*"
+                          onChange={handleImageChange}
+                      />
+                      <label htmlFor="product-image">
+                          <i className="fa-solid fa-camera"></i>
+                          <span>Upload Image</span>
+                      </label>
                   </div>
 
-                  <div>
-                      <input type="text" placeholder="Price"></input>
-                      <span></span>
+                  <div className="selected-image">
                   </div>
-
                   <div>
-                      <input type="number" placeholder="Qunatity"></input>
-                      <span></span>
+                      <Button text="Add" handleClick={AddProduct}></Button>
                   </div>
-              </div>
+              </LandingModal>
 
-              <div>
-                <button>Add</button>
-              </div>
-          </LandingModal>
+
+              )
+          }
+
       </div>
   );
 }

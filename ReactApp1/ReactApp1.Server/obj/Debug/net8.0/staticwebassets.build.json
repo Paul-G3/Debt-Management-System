@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BzULp5Qx0Ms4AcnfE4Nrid4rd5tMcbM3nKXQiQatfog=",
+  "Hash": "7KW/WTg8AXhti1y7om+fg7y3cSMNDDljhSrmHM8heB8=",
   "Source": "ReactApp1.Server",
   "BasePath": "_content/ReactApp1.Server",
   "Mode": "Default",
@@ -18,7 +18,120 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ReactApp1.Server\\wwwroot",
+      "Source": "ReactApp1.Server",
+      "ContentRoot": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\wwwroot\\",
+      "BasePath": "_content/ReactApp1.Server",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\wwwroot\\images\\33512b91-41b6-4969-9dcb-a7f9be1c3daa.jpg",
+      "SourceId": "ReactApp1.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\wwwroot\\",
+      "BasePath": "_content/ReactApp1.Server",
+      "RelativePath": "images/33512b91-41b6-4969-9dcb-a7f9be1c3daa#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "esl95wz6ag",
+      "Integrity": "ctQ1GGnMwKGJ8aYMhgRuyy7qDL54EPUtuipQM2/sAUw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\33512b91-41b6-4969-9dcb-a7f9be1c3daa.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/33512b91-41b6-4969-9dcb-a7f9be1c3daa.esl95wz6ag.jpg",
+      "AssetFile": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\wwwroot\\images\\33512b91-41b6-4969-9dcb-a7f9be1c3daa.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "128470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ctQ1GGnMwKGJ8aYMhgRuyy7qDL54EPUtuipQM2/sAUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Feb 2026 16:02:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "esl95wz6ag"
+        },
+        {
+          "Name": "label",
+          "Value": "images/33512b91-41b6-4969-9dcb-a7f9be1c3daa.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ctQ1GGnMwKGJ8aYMhgRuyy7qDL54EPUtuipQM2/sAUw="
+        }
+      ]
+    },
+    {
+      "Route": "images/33512b91-41b6-4969-9dcb-a7f9be1c3daa.jpg",
+      "AssetFile": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\wwwroot\\images\\33512b91-41b6-4969-9dcb-a7f9be1c3daa.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "128470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ctQ1GGnMwKGJ8aYMhgRuyy7qDL54EPUtuipQM2/sAUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Feb 2026 16:02:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ctQ1GGnMwKGJ8aYMhgRuyy7qDL54EPUtuipQM2/sAUw="
+        }
+      ]
+    }
+  ]
 }
