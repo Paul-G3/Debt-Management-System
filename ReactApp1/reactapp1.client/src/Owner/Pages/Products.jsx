@@ -7,53 +7,8 @@ import LandingModal from '../../Landing/Components/LandingModal';
 import React, { useState,useEffect } from "react";
 
 function Products() {
-    const basePath = import.meta.env.VITE_API_BASE_URL;
-    const [openModal, setOpenModal] = useState(false);
-    const openingModal = () => { setOpenModal(true) }
+    const basePath = import.meta.env.VITE_API_BASE_URL;    
     const [ProductsData, setProductsData] = useState([]);
-    const dummyProducts = [
-        {
-            id: 1,
-            name: "Paracetamol 500mg",
-            category: "Pain Relief",
-            price: 35.00,
-            stock: "In Stock",
-            image: "https://via.placeholder.com/40"
-        },
-        {
-            id: 2,
-            name: "Ibuprofen 200mg",
-            category: "Pain Relief",
-            price: 48.50,
-            stock: "Low Stock",
-            status:"lowstock",
-            image: "https://via.placeholder.com/40"
-        },
-        {
-            id: 3,
-            name: "Amoxicillin 250mg",
-            category: "Antibiotics",
-            price: 120.00,
-            stock: "In Stock",
-            image: "https://via.placeholder.com/40"
-        },
-        {
-            id: 4,
-            name: "Vitamin C Tablets",
-            category: "Supplements",
-            price: 75.00,
-            stock: "Out of Stock",
-            image: "https://via.placeholder.com/40"
-        },
-        {
-            id: 5,
-            name: "Cough Syrup 100ml",
-            category: "Cold & Flu",
-            price: 60.00,
-            stock: "In Stock",
-            image: "https://via.placeholder.com/40"
-        }
-    ];
 
     //Modal state variables
     const [ProductName, setProductName] = useState(null);
@@ -63,6 +18,40 @@ function Products() {
     const [imageFile, setImageFile] = useState(null);
     const [preview, setPreview] = useState(null);
 
+    const [EditModalData, setEditModalData] = useState();
+    const [openModal, setOpenModal] = useState(false);
+    const [openEditModal, setopenEditModal] = useState(false);
+    const openingModal = () => { setOpenModal(true) }
+    const CloseEditModal = () => { setopenEditModal(false) }
+
+    //functions
+
+    const SaveChanges = () => {
+
+        setEditModalData(prev => {
+            const { image, imageUrl, ...rest } = prev;
+            return rest;
+        });
+
+
+        fetch(`${basePath}/Owner/edit-product-details`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(EditModalData)
+        })
+            .then(() => {
+                GetAllProduct();
+                setopenEditModal(false);
+            });
+    }
+
+    const editProductDetais = (product) => {
+        setEditModalData(product);
+        console.log(product);
+        setopenEditModal(true);
+    }
     const handleImageChange = (e) => {
         const file = e.target.files[0];
         if (!file) return;
@@ -86,6 +75,19 @@ function Products() {
 
         GetAllProduct();
     }
+
+    const DeleteProduct = (productId) => {
+        fetch(`${basePath}/Owner/delete-product`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(productId)
+        })
+            .then(() => {
+                GetAllProduct(); //refresh after delete
+            });
+    };
 
     function GetAllProduct() {
         fetch(`${basePath}/Owner/get-products`, {
@@ -127,10 +129,97 @@ function Products() {
           </div>
 
           <MobileCard products={ProductsData} />
-          <DesktopTable products={ProductsData} />
+          <DesktopTable products={ProductsData} onDelete={DeleteProduct} editProduct={editProductDetais} />
 
           {
-              openModal && (<LandingModal title="Add Product">                
+              openEditModal && (
+                  <LandingModal title="Edit Product" close={CloseEditModal }>
+
+                      <div className="add-products-container">
+
+                          {/* Product Name */}
+                          <div className="add-input-container">
+                              <input
+                                  type="text"
+                                  placeholder="Product Name"
+                                  value={EditModalData?.name || ""}
+                                  onChange={(e) =>
+                                      setEditModalData(prev => ({
+                                          ...prev,
+                                          name: e.target.value
+                                      }))
+                                  }
+                              />
+                              <span className="required-asterick">*</span>
+                          </div>
+
+                          {/* Category */}
+                          <div className="add-input-container">
+                              <select
+                                  value={EditModalData?.category || ""}
+                                  onChange={(e) =>
+                                      setEditModalData(prev => ({
+                                          ...prev,
+                                          category: e.target.value
+                                      }))
+                                  }
+                              >
+                                  <option value="">Category</option>
+                                  <option value="Liquid">Liquid</option>
+                                  <option value="Bread">Bread</option>
+                                  <option value="Protein">Protein</option>
+                              </select>
+                              <span className="required-asterick">*</span>
+                          </div>
+
+                          {/* Price */}
+                          <div className="add-input-container">
+                              <input
+                                  type="text"
+                                  placeholder="Price"
+                                  value={EditModalData?.price || ""}
+                                  onChange={(e) =>
+                                      setEditModalData(prev => ({
+                                          ...prev,
+                                          price: e.target.value
+                                      }))
+                                  }
+                              />
+                              <span className="required-asterick">*</span>
+                          </div>
+
+                          {/* Quantity */}
+                          <div className="add-input-container">
+                              <input
+                                  type="number"
+                                  placeholder="Quantity"
+                                  value={EditModalData?.quantity || ""}
+                                  onChange={(e) =>
+                                      setEditModalData(prev => ({
+                                          ...prev,
+                                          quantity: e.target.value
+                                      }))
+                                  }
+                              />
+                              <span className="required-asterick">*</span>
+                          </div>
+
+                      </div>
+
+                      <div>
+                          <Button
+                              text="Save Changes"
+                              handleClick={SaveChanges}
+                          />
+                      </div>
+
+                  </LandingModal>
+              )
+          }
+
+
+          {
+              openModal && (<LandingModal title="Add Product" close={() => setOpenModal(false) }>                
 
                   <div className="add-products-container">
 
@@ -178,10 +267,7 @@ function Products() {
                   <div>
                       <Button text="Add" handleClick={AddProduct}></Button>
                   </div>
-              </LandingModal>
-
-
-              )
+              </LandingModal>)
           }
 
       </div>

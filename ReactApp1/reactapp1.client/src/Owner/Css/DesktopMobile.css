@@ -63,12 +63,32 @@
     top:5px;
 }
 
+.table-body span button {
+    background-color:transparent;
+    border:none;
+    font-size:1rem;
+    cursor:pointer;
+}
 
+.delete-button-desktop
+{
+    color:orangered;
+}
+
+.edit-button-desktop {
+    color: #008080;
+    margin-right:1rem;
+    margin-left:0.7rem;
+}
+
+.price-product
+{
+    color:blue;
+}
 /*mobile css*/
-
 .product-card {
     padding: 0 10px;
-    position:relative;
+    position: relative;
 }
 
 .product-card hr 

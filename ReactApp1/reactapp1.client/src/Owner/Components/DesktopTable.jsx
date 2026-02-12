@@ -1,6 +1,23 @@
 import "../Css/DesktopMobile.css"
 
-function DesktopTable({ products }) {
+function DesktopTable({ products, onDelete, editProduct }) {
+    const basePath = import.meta.env.VITE_API_BASE_URL;
+
+    const DeleteProduct = (productId) => {
+        fetch(`${basePath}/Owner/delete-product`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(productId)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+            });
+    }
+
+
   return (
       <div className="products-table">
           <div className="grid-header">
@@ -13,7 +30,8 @@ function DesktopTable({ products }) {
           </div>
 
           {products.map(p => (
-              <div  key={p.id}>
+              <div key={p.productID}>
+                  <input type="hidden" value={p.productID }></input>
                   <div className="table-body">
                       <span className="product-name-image">
                           <span className="product-image-container">
@@ -26,15 +44,15 @@ function DesktopTable({ products }) {
                       </span>
 
                       <span>{p.category}</span>
-                      <span>${p.price}</span>
+                      <span className="price-product">R{p.price.toFixed(2)}</span>
                       <span className={p.status.toLowerCase().replace(" ", "_")}>{p.status}</span>
-                      <span>100</span>
+                      <span>{p.quantity} Qty</span>
                       <span>
-                          <button>
+                          <button className="edit-button-desktop" onClick={() => editProduct(p) }>
                               <i className="fa-solid fa-pen"></i>
                           </button>
 
-                          <button>
+                          <button className="delete-button-desktop" onClick={() => onDelete(p.productID) }>
                               <i className="fa-solid fa-trash"></i>
                           </button>
                       </span>

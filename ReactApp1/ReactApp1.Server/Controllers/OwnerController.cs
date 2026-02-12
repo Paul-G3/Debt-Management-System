@@ -58,6 +58,22 @@ namespace ReactApp1.Server.Controllers
 
             var data = await repo.GetAllProducts(1);
             return Ok(data);
+        } 
+        
+        [HttpPost("delete-product")]
+        public async Task<IActionResult> DeleteProduct([FromBody] int productId)
+        {
+
+            var data = await repo.DeleteProduct(productId);
+            return Ok(data);
+        } 
+        
+        [HttpPost("edit-product-details")]
+        public async Task<IActionResult> EditProdcutDetails([FromBody] Product product)
+        {
+            await repo.EditProductDetails(product);
+
+            return Ok();
         }
     }
 }

@@ -7,7 +7,8 @@ function MobileCard({ products }) {
 
             products.map(p => (
 
-                <div className="product-card" key={p.id}>
+                <div className="product-card" key={p.productID}>
+                    <input type="hidden" value={p.productID }></input>
 
                     <div className="product-details">
                         <div className="product-image-container-mobile">
@@ -15,7 +16,7 @@ function MobileCard({ products }) {
                         </div>
 
                         <div className="">
-                            <p className="product-price-mobile">R{p.price }</p>
+                            <p className="product-price-mobile">R{p.price.toFixed(2)}</p>
                             <p className="product-name-mobile">{p.name}</p>
                             <p className="category-mobile">{p.category} </p>
                             <p className="quantity-mobile">{p.quantity } Qty</p>
