@@ -65,5 +65,18 @@ namespace ReactApp1.Server.Repositories.OwnerRepository
             }
         }
 
+       public async Task<bool> CreateCustomer(User user)
+        {
+            try
+            {
+                await dataAccess.SaveData("sp_CreateCustomer", new {user.UserName,user.Surname,user.IDNumber,user.Email,user.Title,user.PhoneNumber });
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
     }
 }

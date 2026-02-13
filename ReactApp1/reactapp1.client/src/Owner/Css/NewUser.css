@@ -1,0 +1,74 @@
+.new-customer > h1
+{
+    text-align:center;
+    margin:1rem 0;
+}
+
+.new-customer {
+    padding: 0 1rem;
+}
+
+
+.user-new-container input , .new-user-input-container select{
+    min-width: 95%;
+    padding: 8px 25px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.new-customer fieldset {
+    padding: 15px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.new-user-input-container
+{
+    position:relative;
+    margin-bottom:1rem;
+}
+
+
+.new-user-input-container i 
+{
+    position:absolute;
+    top:10px;
+    left:5px;
+    color:dimgray;
+}
+legend {
+    color: #008080;
+    font-size: 1.5rem;
+}
+
+
+@media (min-width: 768px) {
+    .user-new-container
+    {
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap:1rem;
+    }
+
+    .new-user-button
+    {
+        display:flex;
+        justify-content:center;
+    }
+}
+
+
+
+
+@media (min-width: 1000px) {
+    .new-customer
+    {
+      padding:0 5rem;
+    }
+}

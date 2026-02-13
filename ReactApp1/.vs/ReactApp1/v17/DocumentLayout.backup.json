@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\owner\\pages\\products.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\owner\\pages\\products.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\landing\\components\\landingmodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\landing\\components\\landingmodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.server\\controllers\\ownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|solutionrelative:reactapp1.server\\controllers\\ownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\owner\\components\\desktoptable.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\owner\\components\\desktoptable.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.server\\repositories\\ownerrepository\\iownerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|solutionrelative:reactapp1.server\\repositories\\ownerrepository\\iownerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\owner\\components\\mobilecard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\owner\\components\\mobilecard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.server\\repositories\\ownerrepository\\ownerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|solutionrelative:reactapp1.server\\repositories\\ownerrepository\\ownerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\owner\\css\\desktopmobile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\owner\\css\\desktopmobile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDAC44B8-B73E-4A98-BE78-AFFDA78BD4B3}|ReactApp1.Server\\ReactApp1.Server.csproj|solutionrelative:reactapp1.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|c:\\users\\goodm\\source\\repos\\debt-management-system\\reactapp1\\reactapp1.client\\src\\owner\\pages\\products.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{372AB1E8-7CBB-9DB4-7313-847C4133320E}|reactapp1.client\\reactapp1.client.esproj|solutionrelative:reactapp1.client\\src\\owner\\pages\\products.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 8,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,79 +54,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LandingModal.jsx",
-              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Landing\\Components\\LandingModal.jsx",
-              "RelativeDocumentMoniker": "reactapp1.client\\src\\Landing\\Components\\LandingModal.jsx",
-              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Landing\\Components\\LandingModal.jsx",
-              "RelativeToolTip": "reactapp1.client\\src\\Landing\\Components\\LandingModal.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-12T19:24:33.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Products.jsx",
-              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Owner\\Pages\\Products.jsx",
-              "RelativeDocumentMoniker": "reactapp1.client\\src\\Owner\\Pages\\Products.jsx",
-              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Owner\\Pages\\Products.jsx",
-              "RelativeToolTip": "reactapp1.client\\src\\Owner\\Pages\\Products.jsx",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAYwIAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-12T11:41:34.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "OwnerController.cs",
-              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Controllers\\OwnerController.cs",
-              "RelativeDocumentMoniker": "ReactApp1.Server\\Controllers\\OwnerController.cs",
-              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Controllers\\OwnerController.cs",
-              "RelativeToolTip": "ReactApp1.Server\\Controllers\\OwnerController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwDoAAAA0AAAAAAAAAA==",
+              "Title": "OwnerRepo.cs",
+              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Repositories\\OwnerRepository\\OwnerRepo.cs",
+              "RelativeDocumentMoniker": "ReactApp1.Server\\Repositories\\OwnerRepository\\OwnerRepo.cs",
+              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Repositories\\OwnerRepository\\OwnerRepo.cs",
+              "RelativeToolTip": "ReactApp1.Server\\Repositories\\OwnerRepository\\OwnerRepo.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T11:36:02.431Z",
+              "WhenOpened": "2026-02-13T13:57:48.16Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DesktopMobile.css",
-              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Owner\\Css\\DesktopMobile.css",
-              "RelativeDocumentMoniker": "reactapp1.client\\src\\Owner\\Css\\DesktopMobile.css",
-              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Owner\\Css\\DesktopMobile.css",
-              "RelativeToolTip": "reactapp1.client\\src\\Owner\\Css\\DesktopMobile.css",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAewFUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-02-10T15:10:38.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DesktopTable.jsx",
-              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Owner\\Components\\DesktopTable.jsx",
-              "RelativeDocumentMoniker": "reactapp1.client\\src\\Owner\\Components\\DesktopTable.jsx",
-              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Owner\\Components\\DesktopTable.jsx",
-              "RelativeToolTip": "reactapp1.client\\src\\Owner\\Components\\DesktopTable.jsx",
-              "ViewState": "AgIAABgAAAAAAAAAAAAmwEIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-10T14:11:05.45Z",
+              "DocumentIndex": 1,
+              "Title": "IOwnerRepo.cs",
+              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Repositories\\OwnerRepository\\IOwnerRepo.cs",
+              "RelativeDocumentMoniker": "ReactApp1.Server\\Repositories\\OwnerRepository\\IOwnerRepo.cs",
+              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Repositories\\OwnerRepository\\IOwnerRepo.cs",
+              "RelativeToolTip": "ReactApp1.Server\\Repositories\\OwnerRepository\\IOwnerRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T13:57:23.084Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MobileCard.jsx",
-              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Owner\\Components\\MobileCard.jsx",
-              "RelativeDocumentMoniker": "reactapp1.client\\src\\Owner\\Components\\MobileCard.jsx",
-              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Owner\\Components\\MobileCard.jsx",
-              "RelativeToolTip": "reactapp1.client\\src\\Owner\\Components\\MobileCard.jsx",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Title": "Products.jsx",
+              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Owner\\Pages\\Products.jsx",
+              "RelativeDocumentMoniker": "reactapp1.client\\src\\Owner\\Pages\\Products.jsx",
+              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\reactapp1.client\\src\\Owner\\Pages\\Products.jsx",
+              "RelativeToolTip": "reactapp1.client\\src\\Owner\\Pages\\Products.jsx",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-05T19:07:22.769Z"
+              "WhenOpened": "2026-02-13T13:39:23.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OwnerController.cs",
+              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Controllers\\OwnerController.cs",
+              "RelativeDocumentMoniker": "ReactApp1.Server\\Controllers\\OwnerController.cs",
+              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Controllers\\OwnerController.cs*",
+              "RelativeToolTip": "ReactApp1.Server\\Controllers\\OwnerController.cs*",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwFMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T13:38:13.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ReactApp1.Server\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\goodm\\source\\repos\\Debt-Management-System\\ReactApp1\\ReactApp1.Server\\Models\\User.cs",
+              "RelativeToolTip": "ReactApp1.Server\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T13:36:02.819Z",
+              "EditorCaption": ""
             }
           ]
         },

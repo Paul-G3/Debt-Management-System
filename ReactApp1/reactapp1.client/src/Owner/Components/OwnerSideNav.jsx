@@ -33,7 +33,17 @@ function OwnerSideNav() { //side nav here with routes
                 }
             >
                 <i className="fa-solid fa-users"></i>
-                <span>Customer</span>
+                <span>Customers</span>
+            </NavLink>
+
+            <NavLink
+                to="/Owner/NewUser"
+                className={({ isActive }) =>
+                    isActive ? "nav-item active" : "nav-item"
+                }
+            >
+               <i className="fa-solid fa-user" style={{fontSize:"1.6rem;"}}></i>
+                <span>New User</span>
             </NavLink>
 
             <NavLink

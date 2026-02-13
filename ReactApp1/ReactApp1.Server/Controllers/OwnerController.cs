@@ -75,5 +75,13 @@ namespace ReactApp1.Server.Controllers
 
             return Ok();
         }
+
+        [HttpPost("create-new-customer")]
+        public async Task<IActionResult> CreateCustomer([FromBody] User user)
+        {
+            await repo.CreateCustomer(user);
+
+            return Ok();
+        }
     }
 }

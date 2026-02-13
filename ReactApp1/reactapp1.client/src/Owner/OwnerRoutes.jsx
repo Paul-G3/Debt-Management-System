@@ -3,6 +3,7 @@ import OwnerLayout from '../SubSystemsLayout/OwnerLayout'
 import DashBoard from '../Owner/Pages/DashBoard'
 import Customers from '../Owner/Pages/Customerrs'
 import Products from '../Owner/Pages/Products'
+import NewCustomer from '../Owner/Pages/NewCustomer'
 
 function OwnerRoutes() {
     return (
@@ -14,6 +15,7 @@ function OwnerRoutes() {
                 <Route index element={<DashBoard />} />
                 <Route path="Customers" element={<Customers />} />
                 <Route path="Products" element={<Products />} />
+                <Route path="NewUser" element={<NewCustomer />} />
 
           </Route>
       </Routes>
